@@ -1,0 +1,28 @@
+def verificar(ID):
+    ID = str(ID)
+
+    listaID= []
+    for letra in ID:
+        listaID.append(int(letra))
+    listaID.sort(reverse=True)
+    maior1 = listaID[0]
+    maior2 = listaID[1]
+    maior3 = listaID[2]
+    maior4 = listaID[3]
+
+    str1 = str(maior1)
+    str2 = str(maior2)
+    str3 = str(maior3)
+    str4 = str(maior4)
+
+    combinacao1 = int(str4+str1)
+    combinacao2 = int(str3+str2)
+    combinacao3 = int(str4+str3+str2)
+    combinacao4 = int(str1)
+
+    lista1 = [combinacao1, combinacao2]
+    lista2 = [combinacao3, combinacao4]
+    if sum(lista1) > sum(lista2):
+        return (sum(lista2))
+    else:
+        return (sum(lista1))

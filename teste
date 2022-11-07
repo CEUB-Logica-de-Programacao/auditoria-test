@@ -1,0 +1,11 @@
+lista = [3, 2, 3, 6, 4, 5, 1]
+valores = []
+lista.sort()
+for x in lista:
+    if x not in valores:
+        valores.append(x)
+
+if len(valores) == valores[(len(valores))-1]:
+    print("Funcionou")
+else:
+    print('n funfou')
